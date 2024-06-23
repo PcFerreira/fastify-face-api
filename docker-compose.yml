@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: postgres_container
+    restart: always
+    environment:
+      POSTGRES_USER: face-api-test
+      POSTGRES_PASSWORD: 614D05
+      POSTGRES_DB: face-api
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+#docker-compose up -d

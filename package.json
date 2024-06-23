@@ -1,0 +1,31 @@
+{
+  "name": "face-api-test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/app.js",
+    "fixTensorFlow": "rm -rf node_modules/face-api.js/node_modules/@tensorflow",
+    "import": "node import-images.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/helmet": "^11.1.1",
+    "@fastify/static": "^7.0.4",
+    "@prisma/client": "^5.15.1",
+    "@tensorflow/tfjs-node": "^4.20.0",
+    "axios": "^1.7.2",
+    "canvas": "^2.11.2",
+    "dotenv": "^16.4.5",
+    "face-api.js": "^0.22.2",
+    "fastify": "^4.28.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.15.1"
+  }
+}

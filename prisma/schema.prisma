@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model user_images {
+  id    String  @id @db.Uuid
+  image String?
+}
+
+model users {
+  id        String                 @id @db.Uuid
+  embedding Unsupported("vector")?
+}
