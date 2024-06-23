@@ -4,7 +4,11 @@ This project demonstrates facial recognition and similarity search using face-ap
 
 The system uses face-api.js to extract 128-dimensional face embeddings from images. These embeddings are stored in a PostgreSQL database with the pgvector extension, allowing for efficient similarity searches. The L2 distance between face embeddings is used to determine similarity between faces.
 
-[demo](docs/demovideo.mp4)
+
+
+
+https://github.com/PcFerreira/fastify-face-api/assets/26153165/ad70f1a2-663c-4b9a-b7af-d33c9251adf0
+
 
 
 ## Prerequisites
